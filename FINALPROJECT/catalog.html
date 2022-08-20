@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>catalog</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        body {
+            color: #ff9900;
+        }
+        .zoom {
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+            .zoom:hover {
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: black;
+            border: none;
+            width:200px;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="background-color:black">
+    <ul>
+        <li style="margin-left:500px"><a class="active" href="home.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="branch.html">Branches</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="coupon.html">Coupon</a></li>
+
+        <lo style="margin-left:145px "><img src="log.png"></lo>
+    </ul>
+    <center>
+        <h1 style="font-size:50px;font-family:fantasy">CATALOG</h1>
+
+
+        <table style="margin: 80px 0px 100px;bor ">
+            <tr>
+                <td>
+                    <a href="Interior lighting.html"> <img src="in.jpg" style="width:200px;height:175px" class="zoom"></a>
+                </td>
+                <td>
+                    <a href="outside lamps.html"> <img src="out.jpg" style="width: 200px; height: 175px" class="zoom"></a>
+                </td>
+                <td>
+                    <a href="spots.html"> <img src="spot.jpeg" style="width: 200px; height: 175px" class="zoom"></a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <a>Interior lighting</a>
+                </th>
+                <th>
+                    <a>Outside lighting</a>
+                </th>
+                <th>
+                    <a>Spots</a>
+                </th>
+            </tr>
+        </table>
+
+
+
+
+        <div id="flip">Coupon 70%</div>
+        <div id="panel"> <img src="coupon.jpeg" style="width: 200px; height: 175px"></div>
+
+
+
+    </center>
+
+
+    <div style="background-color: #1a1a1a; height: 200px; color: #ffebcc ">
+        <center>
+            <table>
+                <td>
+
+                    <br />
+                    <a>Address: Crystal 5 Nazareth Illit </a>
+                    <br />
+                    <br />
+                    <a>Phone Number: 1700-70-60-54</a>
+                    <br />
+                    <br />
+                    <br />
+                    <a>Fax:     04-6745705</a>
+                    <br />
+                    <br />
+                    <a>E-mail: w2000@barak.net.il</a>
+                </td>
+                <td>
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf015;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf095;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf1ac;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf0e0;</i>
+                </td>
+                <td>
+                    <img src="log.png" style="margin-left:100px">
+                </td>
+            </table>
+        </center>
+    </div>
+</body>
+</html>

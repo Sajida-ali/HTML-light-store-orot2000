@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheetproject.css">
+    <center><h1>Golden Step</h1></center>
+    <title>Home</title>
+
+
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+
+                <td> <a href="about us.html">About us</a></td>
+                <td> <a href="contact us.html">Contact us</a></td>
+                <td> <a href="project semester 1.html">Home</a></td>
+                <td> <a href="הרשמה.html">Sign up </a></td>
+            <tr />
+        </table>
+        <strong><p style="color:darkgoldenrod ; font-size:30px">   "A golden step.for a golden life"</p></strong>
+
+        <section style="width:80% ;height:90%">
+            <img class="mySlides" src="NNN.jpg"
+                 style="width:100%">
+            <img class="mySlides" src="HHH.jfif"
+                 style="width:100%">
+            <img class="mySlides" src="KKK.jfif"
+                 style="width:100%">
+            <img class="mySlides" src="SSS.jpg"
+                 style="width:100%">
+            <img class="mySlides" src="PPP.jfif"
+                 style="width:100%">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        </script>
+
+        <video autoplay muted loop style="width:80% ;height:90%">
+            <source src="GYM.mp4" type="video/mp4">
+        </video>
+
+    </center>
+</body>
+</html>

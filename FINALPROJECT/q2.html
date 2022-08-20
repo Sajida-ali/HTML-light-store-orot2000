@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .myDiv {
+            border: 5px outset rgb(236 160 107);
+            background-color: rgb(255 106 0);
+            text-align: center;
+            width: 1000px;
+        }
+    </style>
+</head>
+<body style="color:aliceblue;background-color:black">
+    <center>
+        <p style="padding-top: 70px; font-size: 50px ">WELCOME 2</p>
+
+        <div class="myDiv" style="color:black">
+            <p id="demo"></p>
+        </div>
+    </center>
+
+
+    <script>
+        class lamp {
+            constructor(watt, color, price,wigth) {
+                this.watt = watt;
+                this.color = color;
+                this.price = price;
+                this.wigth = wigth;
+
+            }
+
+            getSalary() {
+                return 'Full name is:' + this.slary;
+            }
+
+            getStrength() {
+                if (this.watt > 90) {
+                    return "good";
+                }
+                else {
+                    return "not good";
+                }
+
+            }
+
+        }
+        class spot extends lamp {
+            constructor(watt, color, price, wigth, type, diameter) {
+                super(watt, color, price, wigth);
+                this.type = type;
+                this.diameter = diameter;
+            }
+            checkspot() {
+                if (this.diameter < 7) {
+                    this.type = "immersed";
+                }
+                else {
+                    this.type = "external";
+                }
+                return this.type;
+            }
+            gettype() {
+                return 'The type is:' + this.type;
+            }
+            showSpotdetails() {
+                return "The spot watt is:" + " " + this.watt + " " + "and the color is:" + " " + this.color + " " + "The price is:" + " " + this.getSalary() + " " + "the wigth is:" + " " + this.wigth + " " + "the type is:" + " " + this.gettype() + " " + "the diameter is:" + " " + this.diameter;
+            }
+
+        }
+        class sidelamp extends lamp {
+            constructor(watt, color, price, wigth, orekh, lightcolor) {
+                super(watt, color, price, wigth);
+                this.orekh = orekh;
+                this.lightcolor = lightcolor;
+
+            }
+            tableORstand() {
+                if (this.orekh > 2) {
+                    return "table";
+                }
+                else {
+                    return "stand";
+                }
+
+            }
+            forread() {
+                if (this.lightcolor = 6500) {
+                    return "white good for read";
+                }
+                else {
+                    return "yellow not good for read";
+                }
+            }
+            showSidelampdetails() {
+                return "The sidelamp  watt is:" + "    " + this.watt + "     " + "and the color is:" + " " + this.color + "      " + "The price is:" + "   " + this.price + "    " + "the wigth is:" + "     " + this.wigth + "     " + "the orekh is:" + " " + this.orekh + "    " + "the lightcolor is:" + " " + this.lightcolor + "    " + "the lamp is for read?" + "    " + this.forread() + "    " + "stand or table?" + " " + this.tableORstand();
+            }
+        }
+        class outsidelamp extends lamp {
+            constructor(watt, color, price, wigth, wateProof, solar) {
+                super(watt, color, price, wigth);
+                this.wateProof = wateProof;
+                this.solar = solar;
+            }
+            TypeOFvolley() {
+                if (this.solar = "yes") {
+                    return "solar";
+                }
+                else {
+                    return "Standard connection";
+                }
+            }
+            good() {
+                if (this.wateProof > 65) {
+                    return "good";
+                }
+                else {
+                    return "not good";
+                }
+            }
+            showOutsidelampdetails() {
+                return "The outsidelamp  watt is:" + "     " + this.watt + " " + "and the color is:" + "     " + this.color + " " + "The price is:" + " " + this.price + " " + "the wigth is:" + "    " + this.wigth + " " + "the wateProof is good?" + " " + this.good() + " " + "the lamp works in solar?:" + "      " + this.TypeOFvolley();
+            }
+
+        }
+        let l1 = new outsidelamp(75, "black", 2,60, 67, "yes");
+        let l2 = new outsidelamp(45, "white",9, 150, 40, "no");
+        let l3 = new sidelamp(65, "green", 6,360, 3, 6500);
+        let l4 = new sidelamp(96, "yellow",5, 150, 1, 2700);
+        let l5 = new spot(9, "rosegold", 5,90, "external", 6);
+        let l6 = new spot(12, "gold", 129, 21,"internal", 8,);
+
+        document.getElementById("demo").innerHTML = l1.showOutsidelampdetails() + '<br/' + l2.showOutsidelampdetails() + 'br/' + l3.showSidelampdetails() + '<br/>' + l4.showSidelampdetails() + '<br/>' + l5.showSpotdetails()+'<br/>' + l6.showSpotdetails();
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
+

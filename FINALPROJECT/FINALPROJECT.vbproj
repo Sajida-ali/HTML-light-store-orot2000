@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{88FCEA10-BDA6-4F0D-8711-920C2FC3E7BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FINALPROJECT</RootNamespace>
+    <AssemblyName>FINALPROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44348</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FINALPROJECT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FINALPROJECT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="22 %282%29.jpeg" />
+    <Content Include="a.png" />
+    <Content Include="AXOlight.jpg" />
+    <Content Include="Bukingham.jpg" />
+    <Content Include="cdoorem.jpeg" />
+    <Content Include="click.jpeg" />
+    <Content Include="coupon.jpeg" />
+    <Content Include="fsss.jpeg" />
+    <Content Include="goccia.jpg" />
+    <Content Include="Herner-Glas.jpg" />
+    <Content Include="home.html" />
+    <Content Include="contact us.html" />
+    <Content Include="brands.html" />
+    <Content Include="branch.html" />
+    <Content Include="catalog.html" />
+    <Content Include="coupoon.html" />
+    <Content Include="q2.html" />
+    <Content Include="s10.jpeg" />
+    <Content Include="s11.jpeg" />
+    <Content Include="s2.jpeg" />
+    <Content Include="s3.jpeg" />
+    <Content Include="s4.jpeg" />
+    <Content Include="s5.jpeg" />
+    <Content Include="s6.jpeg" />
+    <Content Include="s7.jpeg" />
+    <Content Include="s8.jpeg" />
+    <Content Include="s9.jpeg" />
+    <Content Include="spots.html" />
+    <Content Include="i1.jpeg" />
+    <Content Include="i10.jpeg" />
+    <Content Include="i11.jpeg" />
+    <Content Include="i12.jpeg" />
+    <Content Include="i13.jpeg" />
+    <Content Include="i14.jpeg" />
+    <Content Include="i15.jpeg" />
+    <Content Include="i16.jpeg" />
+    <Content Include="i17.jpg" />
+    <Content Include="i18.jpeg" />
+    <Content Include="i19.jpeg" />
+    <Content Include="i2.jpeg" />
+    <Content Include="i20.jpeg" />
+    <Content Include="i21.jpeg" />
+    <Content Include="i22.jpeg" />
+    <Content Include="i23.jpeg" />
+    <Content Include="i3.jpeg" />
+    <Content Include="i4.jpeg" />
+    <Content Include="i5.jpeg" />
+    <Content Include="i6.jpeg" />
+    <Content Include="i7.jpeg" />
+    <Content Include="i8.jpeg" />
+    <Content Include="i9.jpeg" />
+    <Content Include="in.jpg" />
+    <Content Include="Interior lighting.html" />
+    <Content Include="o.jpeg" />
+    <Content Include="o0.jpeg" />
+    <Content Include="o1.jpeg" />
+    <Content Include="o10.jpeg" />
+    <Content Include="o11.jpeg" />
+    <Content Include="o12.jpeg" />
+    <Content Include="o13.jpeg" />
+    <Content Include="o14.jpeg" />
+    <Content Include="o15.jpeg" />
+    <Content Include="o16.jpeg" />
+    <Content Include="o17.jpeg" />
+    <Content Include="o18.jpeg" />
+    <Content Include="o19.jpeg" />
+    <Content Include="o2.jpeg" />
+    <Content Include="o20.jpeg" />
+    <Content Include="o21.jpeg" />
+    <Content Include="o22.jpeg" />
+    <Content Include="o23.jpeg" />
+    <Content Include="o24.jpeg" />
+    <Content Include="o3.jpeg" />
+    <Content Include="o4.jpeg" />
+    <Content Include="o5.jpeg" />
+    <Content Include="o6.jpeg" />
+    <Content Include="o7.jpeg" />
+    <Content Include="o8.jpeg" />
+    <Content Include="o9.jpeg" />
+    <Content Include="orot.mp4" />
+    <Content Include="out.jpg" />
+    <Content Include="outside lamps.html" />
+    <Content Include="laa.jpg" />
+    <Content Include="rt.jpeg" />
+    <Content Include="karboxx.jpg" />
+    <Content Include="lamp.gif" />
+    <Content Include="Leadlux.jpg" />
+    <Content Include="log.png" />
+    <Content Include="logo.jpg" />
+    <Content Include="logosat.png" />
+    <Content Include="Lucente.jpg" />
+    <Content Include="Luceplan.jpg" />
+    <Content Include="Mantra.jpg" />
+    <Content Include="Martinelliluce.jpg" />
+    <Content Include="modoluce.jpg" />
+    <Content Include="neweba.jpg" />
+    <Content Include="nlamp.gif" />
+    <Content Include="RUGGIU.jpg" />
+    <Content Include="slide1.png" />
+    <Content Include="slide2.jpg" />
+    <Content Include="slide3.jpg" />
+    <Content Include="spot.jpeg" />
+    <Content Include="Studio-Italia-Design.jpg" />
+    <Content Include="menu.css" />
+    <Content Include="contact.css" />
+    <Content Include="catalog.css" />
+    <Content Include="Vibia.jpg" />
+    <Content Include="waze.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Yamagiwas-lighting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49786</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44348/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿body
+{
+    background-color:black
+}
+img {
+    width:100px;
+    height:100px;
+    position:relative;
+    animation-duration:10s;
+    border-radius:10px;
+}
+h1{
+    
+}

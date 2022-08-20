@@ -1,0 +1,164 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coupons</title>
+    <style>
+        div {
+            padding: 50px;
+            background-color: rgba(255, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: rgb(255 106 0)">
+    <ul>
+        <li style="margin-left: 500px "><a class="active" href="home.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="branch.html">Branches</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <lo style="margin-left:145px "><img src="log.png"></lo>
+    </ul>
+
+    <center>
+        <button style="color: rgb(255 106 0);background-color:black" onclick="this.innerHTML=Date()">Time now</button>
+        <h2 style="color: rgb(255 106 0);background-color:black;font-size:70px" id="timeout"></h2>
+    </center>
+    <p style="color: rgb(255 106 0);background-color:black;font-size:10px" id="Interval"></p>
+
+    <h1>For Coupon</h1>
+    <div onclick="func2()">
+        Coupon 20%
+        <div onclick="func1(event1)"> Coupon 10%</div>
+    </div>
+    Cancel bubble:
+    <input type="checkbox" id="check">
+    <p></p>Copy the coupon ->
+    <input style="color: rgb(236 160 107); background-color: black" type="text" oncopy="myEvent2()" value="NASZ25%">
+    <p style="color: rgb(236 160 107)" id="event2"></p>
+
+    Write what you think about our coupons:
+    <input style="background-color:black; color:rgb(236 160 107)" type="text" id="myInput" oninput="myEvent3()">
+    <p style="color: rgb(236 160 107)" id="event3"></p>
+
+    <input style="color: rgb(236 160 107); background-color: black" type="text" onpaste="myEvent4()" value="paste the coupon: " size="40">
+    <p style="color: rgb(236 160 107); background-color: black" id="event4"></p>
+    <center>
+        <p>you have a suprise</p>
+        <p style="color: #ffebcc" id="demo">you have a suprise</p>
+        <p></p>
+        <a>Try This:</a>
+        <button style="background-color: black; color: rgb(255 106 0) " onclick="openWin()">Open </button>
+        <button style="background-color: black; color: rgb(255 106 0) " onclick="closeWin()">Close </button>
+        <p></p>
+        <button style="color: rgb(255 106 0); background-color: black" onclick="myWindow()">press to win</button>
+        <p></p>
+        <a style="color: rgb(255 106 0);background-color:black;font-size:30px">you can use all coupon for this typs of lights: </a>
+        <p style="color: rgb(236 160 107); background-color: black" id="array"></p>
+    </center>
+
+    <p style="padding-bottom:120px "> </p>
+    <script>
+        //Bubbling
+        function func1(event1) {
+            alert("The Coupon is :OROT10");
+            if (document.getElementById("check").checked) {
+                event.cancelBubble = true;
+            }
+        }
+        function func2() {
+            alert("The Coupon is :OROT20");
+        }
+        function myEvent2() {
+            document.getElementById("event2").innerHTML = "You copied text!"
+        }
+        function myEvent3() {
+            var word = document.getElementById("myInput").value;
+            document.getElementById("event3").innerHTML = "You wrote: " + word;
+        }
+        function myEvent4() {
+            document.getElementById("event4").innerHTML = "You pasted text!";
+        }
+        function myEvent5() {
+            document.getElementById("event4").innerHTML = "You pasted text!";
+        }
+
+        //חלון
+        let myWin;
+        function openWin() {
+            myWin = window.open("", "", "width=200,height=100");
+        }
+        function closeWin() {
+            myWin.close();
+        }
+
+        function myWindow() {
+            alert("congratulations you won ");
+        }
+
+        //Timeout
+        const myTimeout = setTimeout(myGreeting, 2000);
+        function myGreeting() {
+            document.getElementById("timeout").innerHTML = "WELCOME!"
+        }
+
+        //Interval
+        const element = document.getElementById("Interval");
+        setInterval(function () { element.innerHTML += "Coupon " }, 2000);
+
+        //מערך
+        const lamp = ["  Interior lighting ", "  Outside lighting ", " Spots  "];
+        lamp.reverse();
+        document.getElementById("array").innerHTML = lamp;
+
+        //בביטוי רגולרי
+        let dis = document.getElementById("demo").innerHTML;
+        let res = dis.replace(/a suprise/g, "50% discount");
+        document.getElementById("demo").innerHTML = res;
+
+    </script>
+
+
+    <div style="background-color: #1a1a1a; height: 200px; color: #ffebcc ">
+        <center>
+            <table>
+                <td>
+
+                    <br />
+                    <a>Address: Crystal 5 Nazareth Illit </a>
+                    <br />
+                    <br />
+                    <a>Phone Number: 1700-70-60-54</a>
+                    <br />
+                    <br />
+                    <br />
+                    <a>Fax:     04-6745705</a>
+                    <br />
+                    <br />
+                    <a>E-mail: w2000@barak.net.il</a>
+                </td>
+                <td>
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf015;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf095;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf1ac;</i>
+                    <br />
+                    <br />
+                    <i style="font-size:24px" class="fa">&#xf0e0;</i>
+                </td>
+                <td>
+                    <img src="log.png" style="margin-left:100px">
+                </td>
+            </table>
+        </center>
+    </div>
+
+</body>
+</html>
